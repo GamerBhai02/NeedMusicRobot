@@ -57,7 +57,7 @@ def getIds(video):
     return ids
 
 
-def audio_opt(path, uploader="@YouNeedMusicBot"):
+def audio_opt(path, uploader="@Music_Downloader_ABot"):
     return {
         "format": "bestaudio",
         "addmetadata": True,

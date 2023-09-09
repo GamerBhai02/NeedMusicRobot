@@ -36,16 +36,16 @@ async def start(client, message):
     reply_markup = [
         [
             InlineKeyboardButton(
-                text="Bot Channel", url="https://t.me/TheCrowClub"
+                text="Bot Channel", url="https://t.me/gamerbhai02bots"
             ),
             InlineKeyboardButton(
-                text="Repo", url="https://github.com/rozari0/NeedMusicRobot"
+                text="Repo", url="https://github.com/gamerbhai02/NeedMusicRobot"
             ),
             InlineKeyboardButton(text="Help", callback_data="helphome"),
         ],
         [
             InlineKeyboardButton(
-                text="Donate", url="https://www.buymeacoffee.com/rozario"
+                text="Donate", url="https://www.buymeacoffee.com/gamerbhai02"
             ),
         ],
     ]
@@ -114,7 +114,7 @@ async def help(_, message):
     ]
 
     await message.reply_text(
-        f"Hello **{message.from_user.first_name}**, I'm **@NeedMusicRobot**.\nI'm Here to download your music.",
+        f"Hello **{message.from_user.first_name}**, I'm **@Music_Downloader_ABot**.\nI'm Here to download your music.",
         reply_markup=InlineKeyboardMarkup(button),
     )
 
@@ -135,6 +135,6 @@ async def help_home(_, query):
         [InlineKeyboardButton(text=i, callback_data=f"help_{i}")] for i in HELP
     ]
     await query.message.edit(
-        f"Hello **{query.from_user.first_name}**, I'm **@NeedMusicRobot**.\nI'm Here to download your music.",
+        f"Hello **{query.from_user.first_name}**, I'm **@Music_Downloader_ABot**.\nI'm Here to download your music.",
         reply_markup=InlineKeyboardMarkup(button),
     )
